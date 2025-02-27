@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    width: 80%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+
+section img {
+    width: 40%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+section p {
+    width: 55%;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+h4, h3, h5 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Fix text alignment issues */
+strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    section img {
+        width: 80%;
+        margin-top: 10px;
+    }
+    
+    section p {
+        width: 100%;
+    }
+}
